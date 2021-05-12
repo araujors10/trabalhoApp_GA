@@ -28,6 +28,22 @@ public class FormularioActivity extends AppCompatActivity {
         edCelular = findViewById( R.id.edCelular );
         btnSalvar = findViewById( R.id.btnSalvar );
 
+        //Mascaras de exemplo
+        //CPF = "###.###.###-##";
+        //FONE_CELULAR = "(##) ####-#####";
+        //FORMAT_FONE = "(##) ####-####";
+        //FORMAT_CEP = "#####-###";
+        //FORMAT_DATE = "##/##/####";
+        //FORMAT_HOUR = "##:##";
+
+        //Mascara para o telefone residencial
+        final EditText phone_residencial = (EditText) findViewById(R.id.edTelefone);
+        phone_residencial.addTextChangedListener(Mask.insert("(##)####-####", phone_residencial));
+
+        //Mascara para o telefone celular
+        final EditText phone_celular = (EditText) findViewById(R.id.edCelular);
+        phone_celular.addTextChangedListener(Mask.insert("(##)####-#####", phone_celular));
+
         acao = getIntent().getStringExtra("acao");
         if( acao.equals("editar")){
             carregarFormulario();
@@ -50,8 +66,6 @@ public class FormularioActivity extends AppCompatActivity {
             edNome.setText( cliente.nome );
             edTelefone.setText( cliente.telefone );
             edCelular.setText( cliente.celular );
-            //edTelefone.addTextChangedListener(MaskEditUtil.mask(edTelefone, MaskEditUtil.FORMAT_FONE));
-            //edCelular.addTextChangedListener(MaskEditUtil.mask(edCelular, MaskEditUtil.FORMAT_FONE_CELULAR));
 
         }
     }

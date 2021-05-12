@@ -9,14 +9,15 @@
 
     <EditText
         android:id="@+id/edNome"
-        android:layout_width="353dp"
+        android:layout_width="350dp"
         android:layout_height="47dp"
+        android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:ems="10"
         android:hint="Cliente"
         android:inputType="textPersonName"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.056"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -27,7 +28,7 @@
         android:layout_marginTop="72dp"
         android:ems="10"
         android:hint="Telefone"
-        android:inputType="textPersonName"
+        android:inputType="numberSigned"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +41,7 @@
         android:layout_marginTop="128dp"
         android:ems="10"
         android:hint="Celular"
-        android:inputType="textPersonName"
+        android:inputType="numberSigned"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.03"
         app:layout_constraintStart_toStartOf="parent"
