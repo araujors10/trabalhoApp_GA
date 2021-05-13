@@ -2,7 +2,7 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:background="#ddd"
+    android:background="?android:attr/textColorPrimary"
     android:padding="20dp"
     android:id="@+id/llFundoLista"
     android:layout_width="match_parent"
@@ -21,6 +21,7 @@
             android:drawablePadding="5dp"
             android:maxLines="1"
             android:text="Nome do cliente"
+            android:textColor="@android:color/black"
             android:textSize="15sp" />
 
         <TextView
@@ -31,6 +32,7 @@
             android:drawablePadding="5dp"
             android:maxLines="1"
             android:text="Telefone"
+            android:textColor="@android:color/black"
             android:textSize="15dp" />
 
         <TextView
@@ -41,6 +43,7 @@
             android:drawablePadding="5dp"
             android:maxLines="1"
             android:text="Celular"
+            android:textColor="@android:color/black"
             android:textSize="15dp" />
     </LinearLayout>
 </LinearLayout>
